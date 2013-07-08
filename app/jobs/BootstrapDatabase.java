@@ -27,6 +27,7 @@ import com.mchange.v2.c3p0.impl.DbAuth;
 import models.gtfs.GtfsSnapshotMerge;
 import models.gtfs.GtfsSnapshotMergeTask;
 import models.gtfs.GtfsSnapshotMergeTaskStatus;
+import models.Account;
 import models.transit.Agency;
 import models.transit.Route;
 import models.transit.ServiceCalendar;
@@ -47,23 +48,23 @@ import play.test.Fixtures;
 public class BootstrapDatabase extends Job {
 
 	public void doJob() {
-		
+
 		Logger.info("Bootstrapping Database...");
-		
+
 		try
 		{
 			if(Agency.count() == 0)
 			{
 				Fixtures.loadModels("initial-agencies-data.yml");
-				
+				new Account("admin", "admin", "admin@test.com", true, null).save();
 			}
 		}
 		catch (Exception e)
 		{
-			Logger.error(e.toString()); 
+			Logger.error(e.toString());
 		}
-		
-				
+
+
 	}
 
 }

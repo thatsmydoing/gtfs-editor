@@ -1,0 +1,39 @@
+transit.Agency(ltfrb):
+  gtfsAgencyId: LTFRB
+  name: LTFRB
+  url: http://www.ltfrb.gov.ph
+  timezone: Asia/Manila
+  defaultLat: 14.5
+  defaultLon: 121.5
+
+transit.Agency(lrta):
+  gtfsAgencyId: LRTA
+  name: Manila Light Rail Transit Authority
+  url: http://www.lrta.gov.ph/
+  timezone: Asia/Manila
+  defaultLat: 14.5
+  defaultLon: 121.5
+
+transit.Agency(mrtc):
+  gtfsAgencyId: MRTC
+  name: Manila Metro Rail Transit Corporation
+  url: http://dotcmrt3.gov.ph
+  timezone: Asia/Manila
+  defaultLat: 14.5
+  defaultLon: 121.5
+
+transit.Agency(marina):
+  gtfsAgencyId: MARINA
+  name: Maritime Industry Authority
+  url: http://www.marina.gov.ph
+  timezone: Asia/Manila
+  defaultLat: 14.5
+  defaultLon: 121.5
+
+transit.Agency(pnr):
+  gtfsAgencyId: PNR
+  name: Philippine National Railways
+  url: http://www.pnr.gov.ph/
+  timezone: Asia/Manila
+  defaultLat: 14.5
+  defaultLon: 121.5
